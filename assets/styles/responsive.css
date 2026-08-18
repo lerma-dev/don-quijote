@@ -1,0 +1,653 @@
+/* ==== MOBILE XS ==== */
+@media (min-width: 300px) and (max-width: 479px) {
+  .header-content h1 {
+    font-size: 1em;
+  }
+  .header-content img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  nav ul {
+    gap: 8px 12px;
+  }
+  nav a {
+    font-size: 0.9em;
+  }
+  main {
+    padding-top: 84px;
+  }
+  #Mano,
+  #Pluma,
+  #modelo-container {
+    display: none;
+    /* Decoraciones grandes que no aportan en pantallas pequeñas */
+  }
+
+  /*Modal de bienvindad*/
+  /* Contenedor principal del modal para evitar desbordamiento */
+  .modal-instrucciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .modal-contenido {
+    padding: 14px 12px;
+    gap: 8px;
+    max-height: 90vh;
+    font-size: 0.85rem;
+    text-align: center;
+    overflow-y: auto; /* Mantiene scroll solo si la pantalla es extremadamente reducida */
+  }
+
+  /* Títulos e Introducción */
+  .modal-contenido h1 {
+    font-size: 1.15rem;
+    margin: 0;
+  }
+  .modal-intro {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+  .modal-contenido h3 {
+    font-size: 0.95rem;
+    margin: 4px 0 2px 0;
+  }
+  .pasos-lista {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+  }
+  .pasos-lista li {
+    padding: 3px 0;
+    font-size: 0.8rem;
+    line-height: 1.25;
+  }
+  .consejos-box {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 4px 0;
+    background: rgba(
+      255,
+      255,
+      255,
+      0.05
+    ); 
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .consejos-box p {
+    margin: 0 0 4px 0;
+    font-size: 0.8rem;
+  }
+  .consejos-box ul {
+    text-align: left;
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.78rem;
+  }
+  .consejos-box li {
+    padding: 2px 0;
+  }
+  #btn-aceptar {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+  #btn-aceptar:active {
+    transform: translateY(0);
+  }
+
+  /* Boton del chat y Panel desplegable del chat */
+  #chat-fab-btn {
+    top: 60px;
+    right: 5px;
+    width: 54px;
+    height: 54px;
+    font-size: 1.4em;
+  }
+  #chat-container {
+    top: calc(var(--footer-h, 96px) + 40px);
+    right: 8px;
+    left: 8px;
+    width: auto;
+    max-width: none;
+    height: 60vh;
+    max-height: 60vh;
+  }
+
+  /* Boton de capitulos y Panel desplegable Capítulos */
+  .btn-capitulos-flotante {
+    display: flex !important;
+    top: 60px;
+    left: 5px;
+    width: 54px;
+    height: 54px;
+    font-size: 1.4em;
+  }
+  #chapter-container {
+    display: none;
+  }
+  #chapter-container.visible {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: fixed;
+    top: calc(var(--header-h, 96px) + 50px);
+    right: 8px;
+    left: 8px;
+    width: auto;
+    max-width: none;
+    height: 60vh;
+    max-height: 60vh;
+    z-index: 6000;
+    background: var(--card-bg);
+    border: 1px solid var(--accent-color);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+    padding: 14px;
+    max-height: 50vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #chapter-container.visible button {
+    flex: 0 0 auto;
+    padding: 8px 14px;
+    font-size: 0.82em;
+  }
+
+  /*Reprofuctor fijo*/
+  #reproductor-fijo {
+    padding: 8px 8px 6px;
+    border-radius: 14px 14px 0 0;
+  }
+  #reproductor-fijo audio {
+    min-width: 0;
+    height: 30px;
+  }
+  .player-top-row {
+    gap: 8px;
+  }
+  .player-jump {
+    padding: 3px 4px 3px 10px;
+  }
+  .player-jump input {
+    width: 52px;
+  }
+}
+
+/* ==== PHABLETS SM / MD ==== */
+@media (min-width: 480px) and (max-width: 767px) {
+  /* Encabezado */
+  .header-content h1 {
+    font-size: 1.9em;
+  }
+  .header-content img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  nav ul {
+    gap: 8px 12px;
+  }
+  nav a {
+    font-size: 0.9em;
+  }
+  main {
+    padding-top: 84px;
+  }
+
+  /* Ocultar elementos pesados o decorativos */
+  #Mano,
+  #Pluma,
+  #modelo-container {
+    display: none !important;
+  }
+
+  /* Modal */
+  .modal-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 18px;
+    max-height: 92vh;
+    font-size: 1em;
+    text-align: center;
+  }
+  .modal-contenido ol {
+    padding: 5px;
+    list-style: none;
+  }
+  .modal-contenido li {
+    padding: 5px;
+    text-align: center;
+  }
+  .modal-contenido h1 {
+    font-size: 1.5em;
+  }
+
+  /* Boton del chat y Panel desplegable del chat */
+  #chat-fab-btn {
+    top: 60px;
+    right: 5px;
+    width: 54px;
+    height: 54px;
+    font-size: 1.4em;
+  }
+
+  #chat-fab-btn #modelo-container {
+    display: block;
+  }
+  #chat-container {
+    top: 150px;
+    right: 8px;
+    left: 8px;
+    width: auto;
+    height: 60vh;
+    max-height: 60vh;
+    max-width: none;
+  }
+
+  /* Boton de capitulos y Panel desplegable Capítulos */
+  .btn-capitulos-flotante {
+    display: flex !important;
+    top: 60px;
+    left: 5px;
+    width: 54px;
+    height: 54px;
+    font-size: 1.4em;
+  }
+  #chapter-container {
+    display: none;
+  }
+  #chapter-container.visible {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: fixed;
+    top: calc(var(--header-h, 96px) + 50px);
+    right: 8px;
+    left: 8px;
+    width: auto;
+    max-width: none;
+    height: 60vh;
+    max-height: 60vh;
+    z-index: 6000;
+    background: var(--card-bg);
+    border: 1px solid var(--accent-color);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+    padding: 14px;
+    max-height: 50vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #chapter-container.visible button {
+    flex: 1 1 calc(25% - 8px);
+    min-width: 70px;
+    padding: 8px 10px;
+    font-size: 0.82em;
+    text-align: center;
+  }
+
+  /* Reproductor Inferior */
+  #reproductor-fijo {
+    padding: 8px 8px 6px;
+    border-radius: 14px 14px 0 0;
+  }
+  #reproductor-fijo audio {
+    min-width: 0;
+    height: 30px;
+  }
+  .player-top-row {
+    gap: 8px;
+  }
+  .player-jump {
+    padding: 3px 4px 3px 10px;
+  }
+  .player-jump input {
+    width: 52px;
+  }
+}
+
+/* ==== TABLET MD / LG ==== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-content h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  .mini-player-fixed,
+  #reproductor-fijo {
+    border-radius: 14px 14px 0 0;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+  .mini-player {
+    max-width: 98vw;
+    gap: 8px;
+  }
+  .player-jump {
+    padding: 2px 8px;
+    font-size: 0.95em;
+  }
+  #chat-fab-btn {
+    top: 96px;
+    right: 20px;
+    width: 54px;
+    height: 54px;
+    font-size: 1.4em;
+  }
+  #modelo-container {
+    width: 200px;
+    height: 310px;
+    left: 5px;
+    bottom: 120px;
+  }
+
+  #modelo-container.animando {
+    animation: moverQuijote 1s infinite alternate ease-in-out;
+  }
+}
+
+/* ==== DESKTOP LG / XL ==== */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .header-content h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #modelo-container.animando {
+    animation: moverQuijote 1s infinite alternate ease-in-out;
+  }
+
+  #texto-sincronizado {
+    max-width: 90%;
+    margin: 20px auto 160px;
+  }
+  main.main-safearea {
+    left: 220px;
+  }
+  .player-top-row {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 46%;
+    gap: 10px;
+  }
+
+  #chapter-container {
+    flex: 1 1 auto;
+    width: auto;
+    align-self: center;
+    max-height: 64px;
+    margin-left: 10px;
+    padding-left: 16px;
+    border-left: 1px solid var(--border);
+  }
+}
+
+/* ==== DESKTOP XL / 4K+ ==== */
+@media (min-width: 1440px) {
+  main.main-safearea {
+    left: 480px;
+    right: 260px;
+    bottom: 0;
+  }
+  .header-content h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+  #texto-sincronizado {
+    max-width: 90%;
+    margin: 20px auto 160px;
+  }
+  #chat-fab-btn {
+    top: calc(var(--header-h, 90px) + 16px);
+    right: 280px;
+  }
+
+  /* 
+    Los capítulos viven en un sidebar fijo a la izquierda: reutilizamos
+    el mismo #chapter-container (mismos botones, mismos data-attrs,
+    mismo listener de sync.js) en vez de duplicar el listado.
+    OJO: la altura ya NO resta --footer-h. A partir de este ancho el
+    mini player deja de ser una barra inferior (ver mini-player.css),
+    así que ambos sidebars ocupan el 100% de la altura bajo el header. 
+  */
+  #chapter-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: none;
+    height: calc(100vh - var(--header-h, 90px));
+    top: var(--header-h, 90px);
+    left: 0;
+    border-radius: 0;
+    z-index: 900;
+    padding: 18px 12px;
+    width: 220px;
+    gap: 8px;
+    background: var(--surface2, #23232b);
+    border-right: 1px solid var(--border, #333);
+  }
+  #chat-container {
+    right: 280px;
+    top: 250px;
+  }
+  #chapter-container button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 
+    El mini player se convierte en el sidebar espejo, del lado derecho
+    (ver mini-player.css: debe vivir ahí porque se carga después y así
+    gana la cascada frente a la regla base). 
+
+    El modelo 3D ya no flota sobre el texto: se aloja en su propia
+    columna entre el sidebar de capítulos y la lectura, donde sobra
+    espacio de sobra en pantallas grandes. 
+  */
+  #modelo-container {
+    position: fixed;
+    top: var(--header-h, 90px);
+    left: 90px;
+    width: 500px;
+    height: calc(100vh - var(--header-h, 90px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+  }
+  #modelo-container.animando {
+    animation: moverQuijote 1s infinite alternate ease-in-out;
+  }
+
+  #reproductor-fijo {
+    top: var(--header-h, 90px);
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+    height: calc(100vh - var(--header-h, 90px));
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-radius: 0;
+    border-left: 1px solid var(--border, #333);
+    box-shadow: none;
+    padding: 22px 20px;
+    gap: 0;
+    overflow-y: auto;
+  }
+
+  /* Encabezado del sidebar, para que no se sienta como una tira suelta
+     sino como un panel propio (igual que el de capítulos). */
+  #reproductor-fijo::before {
+    order: 0;
+    content: "🎧 Audiolibro";
+    display: block;
+    width: 100%;
+    font-size: 0.72em;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Relleno decorativo: en vez de dejar un hueco vacío bajo los
+     controles, ocupa el resto del alto del sidebar con un ícono de
+     marca de agua -mismo espíritu que los grabados de la pluma en la
+     página principal- en lugar de espacio muerto. */
+  #reproductor-fijo::after {
+    order: 1;
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    flex: 0 0 auto;
+    background-image: url("../images/portada_book_quijote.webp");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  #reproductor-fijo .player-top-row {
+    order: 2;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    gap: 0;
+  }
+
+  /* Grid en vez de flex-wrap: coloca el botón, la barra y los dos
+     tiempos exactamente donde deben ir, sin depender de que el ancho
+     disponible "adivine" el salto de línea correcto. */
+  #reproductor-fijo .mini-player {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "play play"
+      "seek seek"
+      "cur  dur";
+    row-gap: 8px;
+    column-gap: 8px;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Botón de play: más grande, centrado y con el mismo tratamiento de
+     degradado que las burbujas flotantes, para que se sienta parte de
+     la misma familia visual en vez de un botón perdido. */
+  #reproductor-fijo .mini-player button {
+    grid-area: play;
+    justify-self: center;
+    flex: none;
+    width: 60px;
+    height: 60px;
+    font-size: 1.4em;
+    margin: 0 0 6px;
+    background: linear-gradient(
+      135deg,
+      var(--btn-color),
+      var(--secondary-color)
+    );
+    box-shadow: 0 8px 20px rgba(8, 102, 255, 0.35);
+  }
+
+  #reproductor-fijo .mini-player #seek-bar {
+    grid-area: seek;
+    width: 100%;
+    height: 5px;
+    margin: 0;
+  }
+
+  /* Tiempo actual pegado al extremo izquierdo de la barra, duración al
+     extremo derecho -justo debajo de donde termina cada punta- en vez
+     de flotar sueltos en otra fila. */
+  #reproductor-fijo .mini-player #current-time {
+    grid-area: cur;
+    justify-self: start;
+    min-width: 0;
+    font-size: 0.8em;
+    color: var(--muted);
+  }
+
+  #reproductor-fijo .mini-player #duration {
+    grid-area: dur;
+    justify-self: end;
+    min-width: 0;
+    font-size: 0.8em;
+    color: var(--muted);
+  }
+
+  /* Separador antes del salto de tiempo, con su propia etiqueta, para
+     que se lea como una sección aparte y no como un apéndice. */
+  #reproductor-fijo .player-jump {
+    position: relative;
+    width: 100%;
+    margin-top: 22px;
+    padding: 16px 12px 4px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #reproductor-fijo .player-jump::before {
+    content: "Ir a un momento del audio";
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--surface2, #23232b);
+    padding: 0 8px;
+    font-size: 0.68em;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  #reproductor-fijo .player-jump input {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  #reproductor-fijo .player-jump button {
+    flex: 0 0 auto;
+  }
+}
+
+@keyframes moverQuijote {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}

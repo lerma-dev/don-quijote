@@ -1,0 +1,57 @@
+/* === ENCABEZADO PRINCIPAL ==== */
+header.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+header {
+  position: fixed;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--primary-color)
+  );
+  color: var(--text-color);
+  padding: 16px 12px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 20px;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--btn-color);
+}
+.lang-switch-link {
+  background: var(--btn-color);
+  color: #fff !important;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: var(--transition);
+}
+.lang-switch-link:hover {
+  background: var(--btn-hover);
+  color: #fff !important;
+}

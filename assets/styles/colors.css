@@ -1,0 +1,54 @@
+/* ==== PALETA DE COLORES GLOBAL ==== */
+:root {
+  /* Colores generales */
+  --bg-color: #08080c;
+  --card-bg: #141419;
+  --text-color: #f1f1f5;
+  --accent-color: #3b4298;
+  --btn-color: #0866ff;
+  --btn-hover: #3558b9;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --primary-color: #4954bd;
+  --secondary-color: #3516e4;
+  --color-error: #db3d3d;
+  --color-success: #3ddb65;
+  --bg: #0a0a0a;
+  --surface: #111;
+  --surface2: #1a1a1a;
+  --input-bg: #2c2c2c;
+  --border: #222;
+  --text: #f0f0f0;
+  --muted: #888;
+  --accent: #e6b18a;
+  --black: #000;
+  --green: #22c55e;
+  --orange: #f97316;
+  --red: #ef4444;
+  --blue: #3b82f6;
+  /* Colores personalizados */
+  --lt-bg-color: #18191a;
+  --lt-surface-color: #242526;
+  --lt-text-color: #fcfcfc;
+  --lt-muted-color: #b0b3b8;
+  --lt-primary-color: #1877f2;
+  --lt-secondary-color: #42b72a;
+  --lt-error-color: #f02849;
+  --lt-success-color: #42b72a;
+  /* Colores Terminal */
+  --terminal-bg: #0c0f12;
+  --terminal-surface: #161b22;
+  --terminal-border: #21262d;
+  --terminal-green: #2ecc71;
+  --terminal-blue: #3498db;
+  --terminal-yellow: #f1c40f;
+  --terminal-red: #e74c3c;
+  --terminal-purple: #9b59b6;
+  --terminal-text: #ecf0f1;
+  --terminal-muted: #7f8c8d;
+  --terminal-glow: rgba(46, 204, 113, 0.15);
+
+  /* Alturas reales del header y del mini-player, medidas por layout.js.
+     Estos valores son solo un respaldo para el primer render. */
+  --header-h: 112px;
+  --footer-h: 150px;
+}
